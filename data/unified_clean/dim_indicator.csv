@@ -1,0 +1,7 @@
+indicator_code,indicator_name
+NY.GDP.MKTP.CD_LOCAL,"GDP, current (local units in file)"
+NY.GDP.MKTP.CD_MLN,"GDP, current (million units in file)"
+NY.GDP.MKTP.KD.ZG,GDP growth (annual %)
+NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP)
+FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)"
+NE.IMP.GNFS.ZS,Imports of goods and services (% of GDP)

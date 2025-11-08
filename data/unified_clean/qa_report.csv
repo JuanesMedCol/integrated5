@@ -1,0 +1,9 @@
+check,rows
+rows_input,102144
+approx_duplicate_keys_before,0
+rows_fact_clean,102144
+rows_wide,17024
+distinct_country_codes,266
+distinct_years,64
+distinct_indicators,6
+aggregates_true,18816
