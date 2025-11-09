@@ -1,14 +1,17 @@
 # 🌍 Análisis Económico Global (1960–2023)
 
-* **Proyecto Integrador 5**
+## **Proyecto Integrador 5**
+ 
 * **Tema:** Unificación y análisis de indicadores macroeconómicos (PIB, exportaciones, importaciones e inflación)
 * **Autor:** Juan Esteban Atehortúa Sánchez
+
+---
+
 * **Fuente de datos:**
-  * Global Imports of Goods and Services (1960–Present) — Frederick Salazar (2023)
+  *	Global Imports of Goods and Services (1960–Present) — Frederick Salazar (2023)
   *	Global Exports of Goods and Services (1960–Present) — Frederick Salazar (2023)
   *	PIB (GDP) Global by Countries since 1960 to 2021 — Frederick Salazar (2023)
   *	Global Inflation Rate (1960–Present) — Frederick Salazar (2023)
-
 
 ---
 
