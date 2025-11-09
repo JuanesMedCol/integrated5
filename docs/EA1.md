@@ -39,29 +39,41 @@ Analizar la evolución económica global entre 1960 y 2023 a partir de la integr
 
 ## 🧭 Ejemplos de Aplicaciones Potenciales
 
-| Línea de análisis                              | Descripción                                                                                                               |
-| ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| **Correlación entre PIB y comercio exterior**  | Evaluar si los países con mayores niveles de exportación/importación presentan un crecimiento sostenido del PIB.          |
-| **Efecto de la inflación en la productividad** | Medir cómo los altos niveles de inflación afectan el crecimiento económico a mediano plazo.                               |
-| **Comparativo regional**                       | Contrastar América Latina vs Europa o Asia en términos de estabilidad macroeconómica.                                     |
-| **Monitoreo de crisis económicas**             | Identificar décadas con caídas simultáneas en PIB y exportaciones (crisis del petróleo, crisis asiática, pandemia, etc.). |
+Las siguientes líneas de análisis ilustran posibles extensiones o aplicaciones del modelo desarrollado. Cada una de ellas aprovecha la estructura de datos integrada para profundizar en distintos aspectos de la dinámica económica global, priorizando la interpretación analítica de los resultados.
+
+| **Línea de análisis**                                 | **Descripción**                                                                                                                                                                         |
+| ----------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Relación entre PIB y comercio exterior**            | Analizar si los países con mayores niveles de apertura comercial (exportaciones e importaciones) mantienen un crecimiento sostenido del PIB a lo largo del tiempo.                      |
+| **Impacto de la inflación en el desempeño económico** | Explorar cómo los niveles de inflación sostenidos o extremos inciden en el crecimiento económico y la estabilidad macroeconómica de los países.                                         |
+| **Comparativo regional**                              | Contrastar el comportamiento económico entre regiones (por ejemplo, América Latina, Europa y Asia) para identificar diferencias estructurales y niveles de resiliencia económica.       |
+| **Monitoreo de crisis económicas**                    | Detectar y caracterizar periodos de crisis a partir de caídas simultáneas en el PIB y el comercio exterior (como la crisis del petróleo, la crisis asiática o la pandemia de COVID-19). |
 
 ---
 
 ## 🧩 Enfoque metodológico orientado al uso de datos
 
-1. **Recolección y limpieza de datos** → asegurar comparabilidad temporal y geográfica.
-2. **Modelado relacional (SQLite)** → permitir consultas analíticas complejas.
-3. **Exploración de patrones históricos** → uso de SQL + pandas + matplotlib.
-4. **Generación de insights visuales** → dashboards y reportes comparativos.
-5. **Proyección futura (opcional)** → uso de regresión o forecast en notebook posterior.
+El desarrollo del proyecto se sustentó en un enfoque metodológico basado en el uso, tratamiento y análisis de datos económicos abiertos. Dicho enfoque privilegia la interpretación analítica de la información por encima de la aplicación de modelos estadísticos, buscando generar conocimiento a partir de la exploración estructurada y visual de los indicadores.
+
+Las principales etapas metodológicas fueron las siguientes:
+
+1. **Recolección y limpieza de datos:**
+   Se recopilaron indicadores económicos públicos del Banco Mundial, asegurando la coherencia temporal y la comparabilidad entre países y regiones. El proceso de limpieza incluyó la homologación de unidades, la gestión de valores faltantes y la verificación de consistencia en las series históricas.
+
+2. **Modelado relacional (SQLite):**
+   Se diseñó una estructura de base de datos relacional en SQLite para organizar los indicadores y permitir la ejecución de consultas analíticas complejas. Esta estructura facilita el cruce de variables económicas, la segmentación por periodos y regiones, y la reutilización del modelo para futuros análisis.
+
+3. **Exploración de patrones históricos:**
+   A través de consultas SQL complementadas con herramientas de análisis en *pandas* y *matplotlib*, se exploraron tendencias, relaciones y variaciones entre los indicadores a lo largo del tiempo. Esta etapa permitió identificar comportamientos recurrentes y diferencias estructurales entre economías.
+
+4. **Generación de insights visuales:**
+   Los resultados se sintetizaron mediante gráficos, paneles interactivos y reportes comparativos que facilitaron la interpretación de las dinámicas económicas globales. Estas visualizaciones sirvieron como soporte para el análisis descriptivo y la comunicación clara de los hallazgos.
 
 ---
 
 ## 🗂️ Estructura del Proyecto
 
 ```
-📦 proyecto_economico
+proyecto
 ├── README.md                  ← Documentación principal
 ├── run.ipynb                  ← Notebook ejecutable del pipeline y consultas
 │
@@ -94,22 +106,34 @@ Analizar la evolución económica global entre 1960 y 2023 a partir de la integr
 
 ## ⚙️ Proceso Metodológico (ETL)
 
-### 1️⃣ Limpieza Inicial
+El proceso metodológico se estructuró bajo un enfoque ETL (Extract, Transform, Load), orientado a garantizar la calidad, coherencia y utilidad analítica de los datos económicos utilizados. Este enfoque permitió transformar un conjunto heterogéneo de archivos provenientes del Banco Mundial en una base de datos integrada, limpia y lista para su exploración.
 
-* Conversión de separadores `;` → `,`.
-* Estandarización de nombres de campos (`snake_case`).
-* Detección de vacíos (`NaN` → `"N/A"`).
+El ciclo ETL se diseñó con el propósito de extraer la información relevante, depurarla y normalizarla según criterios uniformes, y finalmente cargarla en un modelo relacional que facilite la realización de consultas analíticas complejas. Más que un proceso técnico aislado, este procedimiento constituyó la base metodológica del proyecto, ya que permitió consolidar datos comparables entre países, regiones y periodos, garantizando la trazabilidad y consistencia del análisis posterior.
 
-### 2️⃣ Normalización y Unificación
+A lo largo de este proceso se desarrollaron diversas etapas —desde la limpieza inicial y la estandarización de campos hasta la unificación y modelado relacional—, cada una orientada a optimizar la calidad del conjunto de datos y maximizar su potencial analítico.
 
-* Deduplica por (`country_code`, `year`, `indicator_code`).
-* Clasifica registros (`is_aggregate` = 1 para regiones).
-* Genera tablas:
+### **1. Limpieza Inicial**
 
-  * `dim_geo` — países, regiones y grupos.
-  * `dim_indicator` — indicadores económicos.
-  * `fact_indicators` — tabla de hechos normalizada.
-  * `fact_wide` — pivote de indicadores por país/año.
+La primera etapa del proceso consistió en la depuración y estandarización de los datos obtenidos del Banco Mundial. El objetivo fue garantizar la coherencia estructural y facilitar su posterior integración en un modelo relacional.
+Entre las principales acciones realizadas se incluyen:
+
+* **Conversión de separadores:** transformación de los delimitadores originales para establecer una separación uniforme por comas (`,`), asegurando la correcta lectura de los archivos por los sistemas de análisis.
+* **Estandarización de nombres de campos:** adopción de la convención *snake_case* para unificar la nomenclatura de variables y mejorar la legibilidad del código.
+* **Tratamiento de valores faltantes:** detección y sustitución de vacíos (*NaN*) por la etiqueta `"N/A"`, con el propósito de conservar la integridad del conjunto de datos y evitar errores durante el procesamiento posterior.
+
+### **2. Normalización y Unificación de Datos**
+
+En esta fase se buscó consolidar la información en un formato homogéneo que permitiera su análisis transversal y temporal.
+El proceso incluyó las siguientes operaciones:
+
+* **Eliminación de duplicados:** mediante la combinación de las claves *(country_code, year, indicator_code)* para asegurar la unicidad de los registros.
+* **Clasificación de registros:** identificación de agregados regionales a través del campo `is_aggregate = 1`, diferenciándolos de los datos correspondientes a países individuales.
+* **Estructuración del modelo relacional:** creación de un conjunto de tablas normalizadas que facilitan las consultas analíticas:
+
+  * `dim_geo`: contiene información geográfica sobre países, regiones y grupos económicos.
+  * `dim_indicator`: almacena la descripción y metadatos de los indicadores económicos.
+  * `fact_indicators`: tabla de hechos principal, con los valores de cada indicador por país y año.
+  * `fact_wide`: versión pivotada que consolida los indicadores por país/año, útil para análisis comparativos y visualizaciones.
 
 ---
 
@@ -132,10 +156,13 @@ Archivo: `db/project.db`
 
 ## 📈 Resultados y Análisis
 
-* Se obtuvo una base global unificada con más de **60 años** de datos económicos.
-* Los indicadores muestran correlación entre **PIB**, **inflación** y **comercio exterior**.
-* Se habilitan consultas por país, década y región.
-* El modelo permite replicar fácilmente el análisis con nuevos indicadores del Banco Mundial.
+El desarrollo del proyecto permitió integrar una base de datos global con más de seis décadas de información económica, abarcando el periodo comprendido entre 1960 y 2023. Esta integración facilitó el análisis conjunto de los principales indicadores del Banco Mundial —Producto Interno Bruto (PIB), inflación, exportaciones e importaciones—, ofreciendo una visión amplia y coherente de la evolución económica mundial.
+
+El análisis de los indicadores permitió identificar relaciones consistentes entre el crecimiento del PIB, los niveles de inflación y la dinámica del comercio exterior. Estos resultados reflejan cómo los procesos de apertura comercial y las variaciones monetarias han acompañado, en distintos grados, las trayectorias de crecimiento de las economías a lo largo del tiempo.
+
+Asimismo, el diseño de la base analítica posibilitó realizar consultas y comparaciones por país, década y región, lo que amplía las posibilidades de interpretación y permite examinar las particularidades económicas de cada contexto geográfico y temporal.
+
+Finalmente, la estructura del modelo facilita la incorporación de nuevos indicadores del Banco Mundial, lo que permite replicar y ampliar el análisis en investigaciones futuras, manteniendo la consistencia analítica y la comparabilidad de los resultados obtenidos.
 
 ---
 
