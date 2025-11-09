@@ -40,6 +40,28 @@ Analizar la evolución económica global entre 1960 y 2023 mediante la integraci
 
 ---
 
+## 🧭 Ejemplos de Aplicaciones Potenciales
+
+| Línea de análisis                              | Descripción                                                                                                               |
+| ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| **Correlación entre PIB y comercio exterior**  | Evaluar si los países con mayores niveles de exportación/importación presentan un crecimiento sostenido del PIB.          |
+| **Efecto de la inflación en la productividad** | Medir cómo los altos niveles de inflación afectan el crecimiento económico a mediano plazo.                               |
+| **Comparativo regional**                       | Contrastar América Latina vs Europa o Asia en términos de estabilidad macroeconómica.                                     |
+| **Predicción del PIB**                         | Aplicar modelos de regresión lineal o redes neuronales para estimar el PIB futuro según inflación y comercio.             |
+| **Monitoreo de crisis económicas**             | Identificar décadas con caídas simultáneas en PIB y exportaciones (crisis del petróleo, crisis asiática, pandemia, etc.). |
+
+---
+
+## 🧩 Enfoque metodológico orientado al uso de datos
+
+1. **Recolección y limpieza de datos** → asegurar comparabilidad temporal y geográfica.
+2. **Modelado relacional (SQLite)** → permitir consultas analíticas complejas.
+3. **Exploración de patrones históricos** → uso de SQL + pandas + matplotlib.
+4. **Generación de insights visuales** → dashboards y reportes comparativos.
+5. **Proyección futura (opcional)** → uso de regresión o forecast en notebook posterior.
+
+---
+
 ## 🗂️ Estructura del Proyecto
 
 ```
@@ -74,14 +96,99 @@ Analizar la evolución económica global entre 1960 y 2023 mediante la integraci
 
 ---
 
-## 📦 Entregables
+## ⚙️ Proceso Metodológico (ETL)
 
-| Entregable         | Descripción                                |
-| ------------------ | ------------------------------------------ |
-| `README.md`        | Documentación del proyecto                 |
-| `run.ipynb`        | Notebook con ejecución completa y gráficos |
-| `db/project.db`    | Base SQLite                                |
-| `docs/EA1.md`      | Resumen y análisis formal (Etapa 1)        |
+### 1️⃣ Limpieza Inicial
+
+* Conversión de separadores `;` → `,`.
+* Estandarización de nombres de campos (`snake_case`).
+* Detección de vacíos (`NaN` → `"N/A"`).
+
+### 2️⃣ Normalización y Unificación
+
+Ejecutado con el script:
+
+```bash
+python etl_unify_wdi.py --src data/normalized_data --out data/unified_clean
+```
+
+Este proceso:
+
+* Deduplica por (`country_code`, `year`, `indicator_code`).
+* Clasifica registros (`is_aggregate` = 1 para regiones).
+* Genera tablas:
+
+  * `dim_geo` — países, regiones y grupos.
+  * `dim_indicator` — indicadores económicos.
+  * `fact_indicators` — tabla de hechos normalizada.
+  * `fact_wide` — pivote de indicadores por país/año.
+
+---
+
+## 🧮 Base de Datos (SQLite)
+
+Archivo: `db/project.db`
+
+### Tablas principales
+
+| Tabla                | Descripción                                         |
+| -------------------- | --------------------------------------------------- |
+| `dim_geo`            | Dimensión geográfica (países y regiones)            |
+| `dim_indicator`      | Catálogo de indicadores económicos                  |
+| `fact_indicators`    | Hechos normalizados por país/año/indicador          |
+| `fact_wide`          | Versión pivotada para análisis rápido               |
+| `vw_exports_imports` | Vista SQL para comparar exportaciones/importaciones |
+
+---
+
+## 🔍 Consultas y Visualizaciones en Jupyter
+
+### Ejemplo 1 — Exportaciones vs Importaciones (% del PIB)
+
+```python
+import sqlite3, pandas as pd, matplotlib.pyplot as plt
+conn = sqlite3.connect("db/project.db")
+
+query = """
+SELECT 
+  f.year,
+  AVG(CASE WHEN f.indicator_code='NE.EXP.GNFS.ZS' THEN f.value END) AS exports,
+  AVG(CASE WHEN f.indicator_code='NE.IMP.GNFS.ZS' THEN f.value END) AS imports
+FROM fact_indicators f
+JOIN dim_geo g ON f.country_code=g.country_code
+WHERE g.country_name='Colombia'
+GROUP BY f.year
+ORDER BY f.year;
+"""
+df = pd.read_sql_query(query, conn)
+df.plot(x='year', y=['exports','imports'], figsize=(8,4),
+        title='Colombia: Exportaciones vs Importaciones (% del PIB)')
+plt.show()
+```
+
+### Ejemplo 2 — Crecimiento promedio del PIB por década
+
+```sql
+SELECT 
+  g.region,
+  (f.year/10)*10 AS decade,
+  ROUND(AVG(f.value),2) AS avg_gdp_growth
+FROM fact_indicators f
+JOIN dim_geo g USING (country_code)
+WHERE f.indicator_code = 'NY.GDP.MKTP.KD.ZG'
+  AND g.is_aggregate = 0
+GROUP BY g.region, decade
+ORDER BY g.region, decade;
+```
+
+---
+
+## 📈 Resultados y Análisis
+
+* Se obtuvo una base global unificada con más de **60 años** de datos económicos.
+* Los indicadores muestran correlación entre **PIB**, **inflación** y **comercio exterior**.
+* Se habilitan consultas por país, década y región.
+* El modelo permite replicar fácilmente el análisis con nuevos indicadores del Banco Mundial.
 
 ---
 
@@ -101,18 +208,3 @@ Salazar, F. (2023). *Global Inflation Rate (1960–Present)* [dataset]. Kaggle.
 
 World Bank. (2023). *World Development Indicators*. The World Bank Group.
 [https://databank.worldbank.org/source/world-development-indicators](https://databank.worldbank.org/source/world-development-indicators)
-
----
-
-## ⚖️ Derechos y Uso Académico
-
-Este proyecto ha sido desarrollado con fines exclusivamente **académicos y educativos**, como parte del **Proyecto Integrador 5**.
-El contenido, los análisis y las visualizaciones presentadas se basan en **fuentes de datos públicas y abiertas** del Banco Mundial, obtenidas a través de la plataforma **Kaggle**, bajo licencias **PDDL (Public Domain Dedication and License)**, que permiten su libre uso, redistribución y adaptación con fines no comerciales, siempre que se mantenga la atribución correspondiente a los autores originales.
-
-El autor, **Juan Esteban Atehortúa Sánchez**, conserva los derechos morales sobre la estructura, metodología de análisis, procesamiento de datos y los materiales generados en este trabajo.
-No obstante, se autoriza su uso, reproducción o adaptación en contextos académicos, investigativos o docentes, siempre que se cite la fuente de manera adecuada, conforme a las normas de **referenciación APA** o el formato bibliográfico requerido.
-
-> **Cita sugerida:**
-> Atehortúa Sánchez, J. E. (2025). *Análisis Económico Global (1960–2023): Unificación y análisis de indicadores macroeconómicos (PIB, exportaciones, importaciones e inflación)* [Proyecto académico].
-
-El contenido de este proyecto **no representa posturas oficiales ni asesoramiento económico**, y su propósito es exclusivamente **analítico y formativo**, contribuyendo al fortalecimiento del conocimiento en economía aplicada y análisis de datos.
