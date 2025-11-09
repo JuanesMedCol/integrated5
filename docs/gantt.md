@@ -2,7 +2,7 @@
 
 ### *Formulación de una necesidad de ingeniería de datos*
 
-**Duración:** Semanas 1 a 3 (14 de octubre – 9 de noviembre 2025)
+2**Duración:** Semanas 1 a 3 (20 de octubre – 9 de noviembre 2025)
 **Peso:** 35 % del proyecto
 **Estado:** ✅ **Completada**
 **Entrega:** Hasta el **9 de noviembre a las 23:59**
@@ -47,9 +47,9 @@ Identificar una necesidad de ingeniería de datos y desarrollar una solución qu
 
 | Etapa                                              | Periodo         | Evidencia   | Avance    | Estado       |
 | -------------------------------------------------- | --------------- | ----------- | --------- | ------------ |
-| **Etapa 1 – Formulación y BD (EA1)**               | 14 oct – 9 nov  | Evidencia 1 | **100 %** | ✅ Completado |
+| **Etapa 1 – Formulación y BD (EA1)**               | 20 oct – 9 nov  | Evidencia 1 | **100 %** | ✅ Completado |
 | **Etapa 2 – Análisis y visualización (EA2)**       | 10 nov – 24 nov | Evidencia 2 | 0 %       | ⚪ Pendiente  |
-| **Etapa 3 – Interpretación y entrega final (EA3)** | 25 nov – 8 dic  | Evidencia 3 | 0 %       | ⚪ Pendiente  |
+| **Etapa 3 – Interpretación y entrega final (EA3)** | 25 nov – 7 dic  | Evidencia 3 | 0 %       | ⚪ Pendiente  |
 
 ---
 
