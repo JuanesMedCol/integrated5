@@ -36,7 +36,6 @@ Analizar la evolución económica global entre 1960 y 2023 mediante la integraci
 | **Correlación entre PIB y comercio exterior**  | Evaluar si los países con mayores niveles de exportación/importación presentan un crecimiento sostenido del PIB.          |
 | **Efecto de la inflación en la productividad** | Medir cómo los altos niveles de inflación afectan el crecimiento económico a mediano plazo.                               |
 | **Comparativo regional**                       | Contrastar América Latina vs Europa o Asia en términos de estabilidad macroeconómica.                                     |
-| **Predicción del PIB**                         | Aplicar modelos de regresión lineal o redes neuronales para estimar el PIB futuro según inflación y comercio.             |
 | **Monitoreo de crisis económicas**             | Identificar décadas con caídas simultáneas en PIB y exportaciones (crisis del petróleo, crisis asiática, pandemia, etc.). |
 
 ---
