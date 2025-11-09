@@ -74,17 +74,6 @@ Analizar la evolución económica global entre 1960 y 2023 mediante la integraci
 
 ---
 
-## 📦 Entregables
-
-| Entregable         | Descripción                                |
-| ------------------ | ------------------------------------------ |
-| `README.md`        | Documentación del proyecto                 |
-| `run.ipynb`        | Notebook con ejecución completa y gráficos |
-| `db/project.db`    | Base SQLite                                |
-| `docs/EA1.md`      | Resumen y análisis formal (Etapa 1)        |
-
----
-
 ## 📚 Referencias (APA)
 
 Salazar, F. (2023). *Global Imports of Goods and Services (1960–Present)* [dataset]. Kaggle.
