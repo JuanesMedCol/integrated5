@@ -1,31 +1,39 @@
 # 🌍 Análisis Económico Global (1960–2023)
 
-* **Proyecto Integrador 5**
+## **Proyecto Integrador 5**
+ 
 * **Tema:** Unificación y análisis de indicadores macroeconómicos (PIB, exportaciones, importaciones e inflación)
 * **Autor:** Juan Esteban Atehortúa Sánchez
+
+---
+
 * **Fuente de datos:**
   *	Global Imports of Goods and Services (1960–Present) — Frederick Salazar (2023)
   *	Global Exports of Goods and Services (1960–Present) — Frederick Salazar (2023)
   *	PIB (GDP) Global by Countries since 1960 to 2021 — Frederick Salazar (2023)
   *	Global Inflation Rate (1960–Present) — Frederick Salazar (2023)
 
-
 ---
 
 ## 🧠 Objetivo General
 
-Analizar la evolución económica global entre 1960 y 2023 mediante la integración de datos públicos del Banco Mundial, relacionados con el Producto Interno Bruto (PIB), exportaciones, importaciones e inflación. El propósito es desarrollar una base de datos unificada y analíticamente consistente que permita formular un caso de uso real, evaluando la relación entre el crecimiento económico y los indicadores comerciales y monetarios en distintos países.
+Analizar la evolución económica global entre 1960 y 2023 a partir de la integración de datos públicos del Banco Mundial relacionados con el Producto Interno Bruto (PIB), las exportaciones, las importaciones y la inflación. El propósito es comprender, mediante un enfoque analítico, las dinámicas del crecimiento económico y su relación con los principales indicadores comerciales y monetarios, identificando tendencias y comportamientos relevantes a nivel internacional. 
 
 ---
 
 ## 🎯 Objetivos Específicos
 
-1.	Analizar la evolución histórica del PIB global para comprender el crecimiento económico y sus fluctuaciones desde 1960 hasta 2021 desde una perspectiva descriptiva y analítica.
-2.	Examinar las tendencias de importaciones y exportaciones como porcentaje del PIB para evaluar la apertura comercial y su impacto en la economía global, enfatizando la interpretación de los datos sin aplicar modelos estadísticos.
-3.	Observar el comportamiento de la inflación anual a nivel global para identificar periodos de estabilidad y crisis económicas, enfocándose en la descripción y análisis de las variaciones.
-4.	Comparar las relaciones entre PIB, importaciones, exportaciones e inflación para detectar patrones económicos relevantes entre países y regiones, manteniendo un enfoque analítico sin inferencias estadísticas.
-5.	Visualizar la evolución de estos indicadores a lo largo del tiempo para facilitar la interpretación y comprensión de las dinámicas económicas globales desde un punto de vista analítico.
-6.	Documentar y estructurar los datos para que sirvan como base para futuros análisis descriptivos y educativos, sin realizar inferencias predictivas o causales.
+*	Analizar la evolución histórica del PIB global para interpretar las tendencias del crecimiento económico y sus variaciones entre 1960 y 2023 desde una perspectiva descriptiva y analítica.
+
+*	Examinar las tendencias de las importaciones y exportaciones como proporción del PIB con el fin de interpretar los niveles de apertura comercial y su posible relación con los procesos de desarrollo económico global.
+
+*	Analizar el comportamiento de la inflación anual a nivel mundial para identificar patrones vinculados con periodos de estabilidad y desequilibrio económico, considerando su incidencia en el desempeño general de las economías.
+
+*	Explorar las relaciones entre el PIB, las importaciones, las exportaciones y la inflación para detectar comportamientos comunes, contrastes y dinámicas regionales que aporten a la comprensión integral del sistema económico global.
+
+*	Visualizar e interpretar la evolución de los indicadores económicos mediante representaciones analíticas que faciliten la comprensión de las tendencias, correlaciones y transformaciones a lo largo del tiempo.
+
+*	Reflexionar sobre los hallazgos obtenidos a partir del análisis de los datos, valorando su aporte para la interpretación de los fenómenos económicos internacionales y la formulación de perspectivas futuras de estudio.
 
 ---
 
