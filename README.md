@@ -15,6 +15,7 @@
 ## 🧠 Objetivo General
 
 Analizar la evolución económica global entre 1960 y 2023 mediante la integración de datos públicos del Banco Mundial, relacionados con el Producto Interno Bruto (PIB), exportaciones, importaciones e inflación. El propósito es desarrollar una base de datos unificada y analíticamente consistente que permita formular un caso de uso real, evaluando la relación entre el crecimiento económico y los indicadores comerciales y monetarios en distintos países.
+
 ---
 
 ## 🎯 Objetivos Específicos
