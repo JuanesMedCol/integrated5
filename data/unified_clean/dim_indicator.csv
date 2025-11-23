@@ -1,7 +1,7 @@
-indicator_code,indicator_name
-NY.GDP.MKTP.CD_LOCAL,"GDP, current (local units in file)"
-NY.GDP.MKTP.CD_MLN,"GDP, current (million units in file)"
-NY.GDP.MKTP.KD.ZG,GDP growth (annual %)
-NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP)
-FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)"
-NE.IMP.GNFS.ZS,Imports of goods and services (% of GDP)
+indicator_code,indicator_name,indicator_label_es,indicator_group
+pib_monedalocal,"PIB corriente (moneda local, según archivo)","PIB corriente (moneda local, según archivo)",PIB (nivel)
+pib_millones,"PIB corriente (millones, según archivo)","PIB corriente (millones, según archivo)",PIB (nivel)
+crecimiento_anual,Crecimiento del PIB real (% anual),Crecimiento del PIB real (% anual),Actividad económica
+exportaciones,Exportaciones de bienes y servicios (% del PIB),Exportaciones de bienes y servicios (% del PIB),Comercio exterior
+inflacion,"Inflación (variación anual del IPC, %)","Inflación (variación anual del IPC, %)",Precios e inflación
+importaciones,Importaciones de bienes y servicios (% del PIB),Importaciones de bienes y servicios (% del PIB),Comercio exterior

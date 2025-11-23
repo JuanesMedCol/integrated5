@@ -1,0 +1,300 @@
+iso3,country_name_official,region,sub_region,is_aggregate
+AFG,Afghanistan,South Asia,South Asia,FALSE
+ALA,Åland Islands,Europe & Central Asia,Northern Europe,FALSE
+ALB,Albania,Europe & Central Asia,Southern Europe,FALSE
+DZA,Algeria,Middle East & North Africa,Northern Africa,FALSE
+ASM,American Samoa,East Asia & Pacific,Polynesia,FALSE
+AND,Andorra,Europe & Central Asia,Southern Europe,FALSE
+AGO,Angola,Sub-Saharan Africa,Middle Africa,FALSE
+AIA,Anguilla,Latin America & Caribbean,Caribbean,FALSE
+ATA,Antarctica,South Pole,South Pole,FALSE
+ATG,Antigua and Barbuda,Latin America & Caribbean,Caribbean,FALSE
+ARG,Argentina,Latin America & Caribbean,South America,FALSE
+ARM,Armenia,Europe & Central Asia,Western Asia,FALSE
+ABW,Aruba,Latin America & Caribbean,Caribbean,FALSE
+AUS,Australia,East Asia & Pacific,Australia and New Zealand,FALSE
+AUT,Austria,Europe & Central Asia,Western Europe,FALSE
+AZE,Azerbaijan,Europe & Central Asia,Western Asia,FALSE
+BHS,Bahamas,Latin America & Caribbean,Caribbean,FALSE
+BHR,Bahrain,Middle East & North Africa,Western Asia,FALSE
+BGD,Bangladesh,South Asia,South Asia,FALSE
+BRB,Barbados,Latin America & Caribbean,Caribbean,FALSE
+BLR,Belarus,Europe & Central Asia,Eastern Europe,FALSE
+BEL,Belgium,Europe & Central Asia,Western Europe,FALSE
+BLZ,Belize,Latin America & Caribbean,Central America,FALSE
+BEN,Benin,Sub-Saharan Africa,Western Africa,FALSE
+BMU,Bermuda,North America,Northern America,FALSE
+BTN,Bhutan,South Asia,South Asia,FALSE
+BOL,Bolivia,Latin America & Caribbean,South America,FALSE
+BES,"""Bonaire, Sint Eustatius and Saba""",Latin America & Caribbean,Caribbean,FALSE
+BIH,Bosnia and Herzegovina,Europe & Central Asia,Southern Europe,FALSE
+BWA,Botswana,Sub-Saharan Africa,Southern Africa,FALSE
+BVT,Bouvet Island,South Pole,South Pole,FALSE
+BRA,Brazil,Latin America & Caribbean,South America,FALSE
+IOT,British Indian Ocean Territory,Sub-Saharan Africa,Eastern Africa,FALSE
+BRN,Brunei Darussalam,East Asia & Pacific,South-Eastern Asia,FALSE
+BGR,Bulgaria,Europe & Central Asia,Eastern Europe,FALSE
+BFA,Burkina Faso,Sub-Saharan Africa,Western Africa,FALSE
+BDI,Burundi,Sub-Saharan Africa,Eastern Africa,FALSE
+CPV,Cabo Verde,Sub-Saharan Africa,Western Africa,FALSE
+KHM,Cambodia,East Asia & Pacific,South-Eastern Asia,FALSE
+CMR,Cameroon,Sub-Saharan Africa,Middle Africa,FALSE
+CAN,Canada,North America,Northern America,FALSE
+CYM,Cayman Islands,Latin America & Caribbean,Caribbean,FALSE
+CAF,Central African Republic,Sub-Saharan Africa,Middle Africa,FALSE
+TCD,Chad,Sub-Saharan Africa,Middle Africa,FALSE
+CHL,Chile,Latin America & Caribbean,South America,FALSE
+CHN,China,East Asia & Pacific,Eastern Asia,FALSE
+CXR,Christmas Island,East Asia & Pacific,South-Eastern Asia,FALSE
+CCK,Cocos (Keeling) Islands,East Asia & Pacific,Australia and New Zealand,FALSE
+COL,Colombia,Latin America & Caribbean,South America,FALSE
+COM,Comoros,Sub-Saharan Africa,Eastern Africa,FALSE
+COG,Congo,Sub-Saharan Africa,Middle Africa,FALSE
+COD,"""Congo, Dem. Rep.""",Sub-Saharan Africa,Middle Africa,FALSE
+COK,Cook Islands,East Asia & Pacific,Polynesia,FALSE
+CRI,Costa Rica,Latin America & Caribbean,Central America,FALSE
+CIV,Côte d'Ivoire,Sub-Saharan Africa,Western Africa,FALSE
+HRV,Croatia,Europe & Central Asia,Southern Europe,FALSE
+CUB,Cuba,Latin America & Caribbean,Caribbean,FALSE
+CUW,Curaçao,Latin America & Caribbean,Caribbean,FALSE
+CYP,Cyprus,Europe & Central Asia,Western Asia,FALSE
+CZE,Czechia,Europe & Central Asia,Eastern Europe,FALSE
+DNK,Denmark,Europe & Central Asia,Northern Europe,FALSE
+DJI,Djibouti,Middle East & North Africa,Eastern Africa,FALSE
+DMA,Dominica,Latin America & Caribbean,Caribbean,FALSE
+DOM,Dominican Republic,Latin America & Caribbean,Caribbean,FALSE
+ECU,Ecuador,Latin America & Caribbean,South America,FALSE
+EGY,Egypt,Middle East & North Africa,Northern Africa,FALSE
+SLV,El Salvador,Latin America & Caribbean,Central America,FALSE
+GNQ,Equatorial Guinea,Sub-Saharan Africa,Middle Africa,FALSE
+ERI,Eritrea,Sub-Saharan Africa,Eastern Africa,FALSE
+EST,Estonia,Europe & Central Asia,Northern Europe,FALSE
+SWZ,Eswatini,Sub-Saharan Africa,Southern Africa,FALSE
+ETH,Ethiopia,Sub-Saharan Africa,Eastern Africa,FALSE
+FLK,Falkland Islands,Latin America & Caribbean,South America,FALSE
+FRO,Faroe Islands,Europe & Central Asia,Northern Europe,FALSE
+FJI,Fiji,East Asia & Pacific,Melanesia,FALSE
+FIN,Finland,Europe & Central Asia,Northern Europe,FALSE
+FRA,France,Europe & Central Asia,Western Europe,FALSE
+GUF,French Guiana,Latin America & Caribbean,South America,FALSE
+PYF,French Polynesia,East Asia & Pacific,Polynesia,FALSE
+ATF,French Southern Territories,Sub-Saharan Africa,Eastern Africa,FALSE
+GAB,Gabon,Sub-Saharan Africa,Middle Africa,FALSE
+GMB,Gambia,Sub-Saharan Africa,Western Africa,FALSE
+GEO,Georgia,Europe & Central Asia,Western Asia,FALSE
+DEU,Germany,Europe & Central Asia,Western Europe,FALSE
+GHA,Ghana,Sub-Saharan Africa,Western Africa,FALSE
+GIB,Gibraltar,Europe & Central Asia,Southern Europe,FALSE
+GRC,Greece,Europe & Central Asia,Southern Europe,FALSE
+GRL,Greenland,North America,Northern America,FALSE
+GRD,Grenada,Latin America & Caribbean,Caribbean,FALSE
+GLP,Guadeloupe,Latin America & Caribbean,Caribbean,FALSE
+GUM,Guam,East Asia & Pacific,Micronesia,FALSE
+GTM,Guatemala,Latin America & Caribbean,Central America,FALSE
+GGY,Guernsey,Europe & Central Asia,Northern Europe,FALSE
+GIN,Guinea,Sub-Saharan Africa,Western Africa,FALSE
+GNB,Guinea-Bissau,Sub-Saharan Africa,Western Africa,FALSE
+GUY,Guyana,Latin America & Caribbean,South America,FALSE
+HTI,Haiti,Latin America & Caribbean,Caribbean,FALSE
+HMD,Heard Island and McDonald Islands,Latin America & Caribbean,South America,FALSE
+VAT,Holy See,Europe & Central Asia,Southern Europe,FALSE
+HND,Honduras,Latin America & Caribbean,Central America,FALSE
+HKG,"""Hong Kong SAR, China""",East Asia & Pacific,Eastern Asia,FALSE
+HUN,Hungary,Europe & Central Asia,Eastern Europe,FALSE
+ISL,Iceland,Europe & Central Asia,Northern Europe,FALSE
+IND,India,South Asia,South Asia,FALSE
+IDN,Indonesia,East Asia & Pacific,South-Eastern Asia,FALSE
+IRN,Iran,Middle East & North Africa,Southern Asia,FALSE
+IRQ,Iraq,Middle East & North Africa,Western Asia,FALSE
+IRL,Ireland,Europe & Central Asia,Northern Europe,FALSE
+IMN,Isle of Man,Europe & Central Asia,Northern Europe,FALSE
+ISR,Israel,Middle East & North Africa,Western Asia,FALSE
+ITA,Italy,Europe & Central Asia,Southern Europe,FALSE
+JAM,Jamaica,Latin America & Caribbean,Caribbean,FALSE
+JPN,Japan,East Asia & Pacific,Eastern Asia,FALSE
+JEY,Jersey,Europe & Central Asia,Northern Europe,FALSE
+JOR,Jordan,Middle East & North Africa,Western Asia,FALSE
+KAZ,Kazakhstan,Europe & Central Asia,Western Asia,FALSE
+KEN,Kenya,Sub-Saharan Africa,Eastern Africa,FALSE
+KIR,Kiribati,East Asia & Pacific,Micronesia,FALSE
+PRK,"""Korea, Dem. People’s Rep.""",East Asia & Pacific,Eastern Asia,FALSE
+KOR,"""Korea, Rep.""",East Asia & Pacific,Eastern Asia,FALSE
+KWT,Kuwait,Middle East & North Africa,Western Asia,FALSE
+KGZ,Kyrgyz Republic,Europe & Central Asia,Western Asia,FALSE
+LAO,Lao PDR,East Asia & Pacific,South-Eastern Asia,FALSE
+LVA,Latvia,Europe & Central Asia,Northern Europe,FALSE
+LBN,Lebanon,Middle East & North Africa,Western Asia,FALSE
+LSO,Lesotho,Sub-Saharan Africa,Southern Africa,FALSE
+LBR,Liberia,Sub-Saharan Africa,Western Africa,FALSE
+LBY,Libya,Middle East & North Africa,Northern Africa,FALSE
+LIE,Liechtenstein,Europe & Central Asia,Western Europe,FALSE
+LTU,Lithuania,Europe & Central Asia,Northern Europe,FALSE
+LUX,Luxembourg,Europe & Central Asia,Western Europe,FALSE
+MAC,"""Macao SAR, China""",East Asia & Pacific,Eastern Asia,FALSE
+MDG,Madagascar,Sub-Saharan Africa,Eastern Africa,FALSE
+MWI,Malawi,Sub-Saharan Africa,Eastern Africa,FALSE
+MYS,Malaysia,East Asia & Pacific,South-Eastern Asia,FALSE
+MDV,Maldives,South Asia,South Asia,FALSE
+MLI,Mali,Sub-Saharan Africa,Western Africa,FALSE
+MLT,Malta,Europe & Central Asia,Southern Europe,FALSE
+MHL,Marshall Islands,East Asia & Pacific,Micronesia,FALSE
+MTQ,Martinique,Latin America & Caribbean,Caribbean,FALSE
+MRT,Mauritania,Sub-Saharan Africa,Western Africa,FALSE
+MUS,Mauritius,Sub-Saharan Africa,Eastern Africa,FALSE
+MYT,Mayotte,Sub-Saharan Africa,Eastern Africa,FALSE
+MEX,Mexico,Latin America & Caribbean,Central America,FALSE
+FSM,"""Micronesia, Fed. Sts.""",East Asia & Pacific,Micronesia,FALSE
+MDA,Moldova,Europe & Central Asia,Eastern Europe,FALSE
+MCO,Monaco,Europe & Central Asia,Western Europe,FALSE
+MNG,Mongolia,East Asia & Pacific,Eastern Asia,FALSE
+MNE,Montenegro,Europe & Central Asia,Southern Europe,FALSE
+MSR,Montserrat,Latin America & Caribbean,Caribbean,FALSE
+MAR,Morocco,Middle East & North Africa,Northern Africa,FALSE
+MOZ,Mozambique,Sub-Saharan Africa,Eastern Africa,FALSE
+MMR,Myanmar,East Asia & Pacific,South-Eastern Asia,FALSE
+NAM,Namibia,Sub-Saharan Africa,Southern Africa,FALSE
+NRU,Nauru,East Asia & Pacific,Micronesia,FALSE
+NPL,Nepal,South Asia,South Asia,FALSE
+NLD,Netherlands,Europe & Central Asia,Western Europe,FALSE
+NCL,New Caledonia,East Asia & Pacific,Melanesia,FALSE
+NZL,New Zealand,East Asia & Pacific,Australia and New Zealand,FALSE
+NIC,Nicaragua,Latin America & Caribbean,Central America,FALSE
+NER,Niger,Sub-Saharan Africa,Western Africa,FALSE
+NGA,Nigeria,Sub-Saharan Africa,Western Africa,FALSE
+NIU,Niue,East Asia & Pacific,Polynesia,FALSE
+NFK,Norfolk Island,East Asia & Pacific,Australia and New Zealand,FALSE
+MKD,North Macedonia,Europe & Central Asia,Southern Europe,FALSE
+MNP,Northern Mariana Islands,East Asia & Pacific,Micronesia,FALSE
+NOR,Norway,Europe & Central Asia,Northern Europe,FALSE
+OMN,Oman,Middle East & North Africa,Western Asia,FALSE
+PAK,Pakistan,South Asia,South Asia,FALSE
+PLW,Palau,East Asia & Pacific,Micronesia,FALSE
+PSE,West Bank and Gaza,Middle East & North Africa,Western Asia,FALSE
+PAN,Panama,Latin America & Caribbean,Central America,FALSE
+PNG,Papua New Guinea,East Asia & Pacific,Melanesia,FALSE
+PRY,Paraguay,Latin America & Caribbean,South America,FALSE
+PER,Peru,Latin America & Caribbean,South America,FALSE
+PHL,Philippines,East Asia & Pacific,South-Eastern Asia,FALSE
+PCN,Pitcairn,East Asia & Pacific,Polynesia,FALSE
+POL,Poland,Europe & Central Asia,Eastern Europe,FALSE
+PRT,Portugal,Europe & Central Asia,Southern Europe,FALSE
+PRI,Puerto Rico,Latin America & Caribbean,Caribbean,FALSE
+QAT,Qatar,Middle East & North Africa,Western Asia,FALSE
+REU,Réunion,Sub-Saharan Africa,Eastern Africa,FALSE
+ROU,Romania,Europe & Central Asia,Eastern Europe,FALSE
+RUS,Russian Federation,Europe & Central Asia,Eastern Europe,FALSE
+RWA,Rwanda,Sub-Saharan Africa,Eastern Africa,FALSE
+BLM,Saint Barthélemy,Latin America & Caribbean,Caribbean,FALSE
+SHN,"""Saint Helena, Ascension and Tristan da Cunha""",Sub-Saharan Africa,Western Africa,FALSE
+KNA,Saint Kitts and Nevis,Latin America & Caribbean,Caribbean,FALSE
+LCA,Saint Lucia,Latin America & Caribbean,Caribbean,FALSE
+MAF,Saint Martin (French part),Latin America & Caribbean,Caribbean,FALSE
+SPM,Saint Pierre and Miquelon,North America,Northern America,FALSE
+VCT,Saint Vincent and the Grenadines,Latin America & Caribbean,Caribbean,FALSE
+WSM,Samoa,East Asia & Pacific,Polynesia,FALSE
+SMR,San Marino,Europe & Central Asia,Southern Europe,FALSE
+STP,Sao Tome and Principe,Sub-Saharan Africa,Middle Africa,FALSE
+SAU,Saudi Arabia,Middle East & North Africa,Western Asia,FALSE
+SEN,Senegal,Sub-Saharan Africa,Western Africa,FALSE
+SRB,Serbia,Europe & Central Asia,Southern Europe,FALSE
+SYC,Seychelles,Sub-Saharan Africa,Eastern Africa,FALSE
+SLE,Sierra Leone,Sub-Saharan Africa,Western Africa,FALSE
+SGP,Singapore,East Asia & Pacific,South-Eastern Asia,FALSE
+SXM,Sint Maarten (Dutch part),Latin America & Caribbean,Caribbean,FALSE
+SVK,Slovak Republic,Europe & Central Asia,Eastern Europe,FALSE
+SVN,Slovenia,Europe & Central Asia,Southern Europe,FALSE
+SLB,Solomon Islands,East Asia & Pacific,Melanesia,FALSE
+SOM,Somalia,Middle East & North Africa,Eastern Africa,FALSE
+ZAF,South Africa,Sub-Saharan Africa,Southern Africa,FALSE
+SGS,South Georgia,Latin America & Caribbean,South America,FALSE
+SSD,South Sudan,Sub-Saharan Africa,Eastern Africa,FALSE
+ESP,Spain,Europe & Central Asia,Southern Europe,FALSE
+LKA,Sri Lanka,South Asia,South Asia,FALSE
+SDN,Sudan,Sub-Saharan Africa,Northern Africa,FALSE
+SUR,Suriname,Latin America & Caribbean,South America,FALSE
+SWE,Sweden,Europe & Central Asia,Northern Europe,FALSE
+CHE,Switzerland,Europe & Central Asia,Western Europe,FALSE
+SYR,Syrian Arab Republic,Middle East & North Africa,Western Asia,FALSE
+TWN,"""Taiwan, China""",East Asia & Pacific,Eastern Asia,FALSE
+TJK,Tajikistan,Europe & Central Asia,Western Asia,FALSE
+TZA,Tanzania,Sub-Saharan Africa,Eastern Africa,FALSE
+THA,Thailand,East Asia & Pacific,South-Eastern Asia,FALSE
+TLS,Timor-Leste,East Asia & Pacific,South-Eastern Asia,FALSE
+TGO,Togo,Sub-Saharan Africa,Western Africa,FALSE
+TKL,Tokelau,East Asia & Pacific,Polynesia,FALSE
+TON,Tonga,East Asia & Pacific,Polynesia,FALSE
+TTO,Trinidad and Tobago,Latin America & Caribbean,Caribbean,FALSE
+TUN,Tunisia,Middle East & North Africa,Northern Africa,FALSE
+TUR,Türkiye,Europe & Central Asia,Western Asia,FALSE
+TKM,Turkmenistan,Europe & Central Asia,Western Asia,FALSE
+TCA,Turks and Caicos Islands,Latin America & Caribbean,Caribbean,FALSE
+TUV,Tuvalu,East Asia & Pacific,Polynesia,FALSE
+UGA,Uganda,Sub-Saharan Africa,Eastern Africa,FALSE
+UKR,Ukraine,Europe & Central Asia,Eastern Europe,FALSE
+ARE,United Arab Emirates,Middle East & North Africa,Western Asia,FALSE
+GBR,United Kingdom,Europe & Central Asia,Northern Europe,FALSE
+USA,United States,North America,Northern America,FALSE
+UMI,U.S. Outlying Islands,North America,Northern America,FALSE
+URY,Uruguay,Latin America & Caribbean,South America,FALSE
+UZB,Uzbekistan,Europe & Central Asia,Western Asia,FALSE
+VUT,Vanuatu,East Asia & Pacific,Melanesia,FALSE
+VEN,Venezuela,Latin America & Caribbean,South America,FALSE
+VNM,Vietnam,East Asia & Pacific,South-Eastern Asia,FALSE
+VGB,British Virgin Islands,Latin America & Caribbean,Caribbean,FALSE
+VIR,U.S. Virgin Islands,Latin America & Caribbean,Caribbean,FALSE
+WLF,Wallis and Futuna,East Asia & Pacific,Polynesia,FALSE
+ESH,Western Sahara,Sub-Saharan Africa,Northern Africa,FALSE
+YEM,Yemen,Middle East & North Africa,Western Asia,FALSE
+ZMB,Zambia,Sub-Saharan Africa,Eastern Africa,FALSE
+ZWE,Zimbabwe,Sub-Saharan Africa,Eastern Africa,FALSE
+WLD,World,World,World,TRUE
+HIC,High income,High income countries (aggregate),World,TRUE
+UMC,Upper middle income,Upper middle income countries (aggregate),World,TRUE
+LMC,Lower middle income,Lower middle income countries (aggregate),World,TRUE
+LIC,Low income,Low income countries (aggregate),World,TRUE
+SSA,Sub-Saharan Africa,Sub-Saharan Africa,World,TRUE
+LCN,Latin America & Caribbean,Latin America & Caribbean,World,TRUE
+EAP,East Asia & Pacific,East Asia & Pacific,World,TRUE
+ECA,Europe & Central Asia,Europe & Central Asia,World,TRUE
+MNA,Middle East & North Africa,Middle East & North Africa,World,TRUE
+SAS,South Asia,South Asia,World,TRUE
+SSF,Sub-Saharan Africa,Sub-Saharan Africa,World,TRUE
+TSS,Sub-Saharan Africa (IBRD & IDA),Sub-Saharan Africa (IBRD & IDA),World,TRUE
+NAC,North America,North America,World,TRUE
+TLA,Latin America & Caribbean (IBRD & IDA),Latin America & Caribbean (IBRD & IDA),World,TRUE
+LAC,Latin America & Caribbean (excluding high income),Latin America & Caribbean (excluding high income),World,TRUE
+TSA,South Asia (IBRD & IDA),South Asia (IBRD & IDA),World,TRUE
+EAS,East Asia & Pacific,East Asia & Pacific,World,TRUE
+TEA,East Asia & Pacific (IBRD & IDA),East Asia & Pacific (IBRD & IDA),World,TRUE
+LTE,Late-demographic dividend,World,World Bank,FALSE
+EAR,Early-demographic dividend,World,World Bank,FALSE
+PST,Post-demographic dividend,World,World Bank,FALSE
+PRE,Pre-demographic dividend,World,World Bank,FALSE
+IBT,IBRD & IDA,IBRD and IDA (World Bank),World Bank,TRUE
+IBD,IBRD only,IBRD only (World Bank),World Bank,TRUE
+IDX,IDA only,IDA only (World Bank),World Bank,TRUE
+IDA,IDA total,IDA total (World Bank),World Bank,TRUE
+IDB,IDA blend,IDA blend (World Bank),World Bank,TRUE
+ARB,Arab World,Arab World,World,TRUE
+PSS,Pacific Island Small States,Pacific Island Small States,World,TRUE
+CSS,Caribbean Small States,Caribbean Small States,Caribbean,TRUE
+CEB,Central Europe and the Baltics,Central Europe and the Baltics,Central Europe,TRUE
+ECS,Europe & Central Asia (other),Europe & Central Asia,Europe & Central Asia,TRUE
+TEC,Europe & Central Asia (IBRD & IDA),Europe & Central Asia (IBRD & IDA),Europe & Central Asia,TRUE
+FCS,Fragile and Conflict-Affected Situations,World,World,FALSE
+MIC,Middle income,Middle income countries (aggregate),World,TRUE
+LMY,Low & middle income,Low & middle income countries (aggregate),World,TRUE
+LDC,Least developed countries (UN),Least developed countries (UN classification),World,TRUE
+HPC,Heavily indebted poor countries (HIPC),Heavily indebted poor countries (HIPC),World,TRUE
+SST,Small states,Small States,World,TRUE
+OSS,Other small states,Other Small States,World,TRUE
+OED,OECD members,OECD members,OECD members,FALSE
+INX,Not classified,Not classified,Not classified,TRUE
+MEA,Middle East & North Africa,Middle East & North Africa,Africa,TRUE
+TMN,Middle East & North Africa (IBRD & IDA),Middle East & North Africa (IBRD & IDA),Africa,TRUE
+EUU,European Union,European Union,European Union,TRUE
+EMU,Euro area,Euro Area,European Union,TRUE
+AFE,Sub-Saharan Africa (Eastern Africa),Sub-Saharan Africa,Eastern Africa,TRUE
+AFW,Sub-Saharan Africa (Western & Central Africa),Sub-Saharan Africa,Western & Central Africa,TRUE
+CHI,Channel Islands,Channel Islands,Western Europe,TRUE
+XKX,Kosovo,Europe & Central Asia,Southern Europe,FALSE
